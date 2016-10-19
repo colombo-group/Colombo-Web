@@ -56,11 +56,11 @@ a:hover {
           transition: all 0.4s; }
         .navbar-default .navbar-nav li a:before {
           content: "";
-          background-color: #e95420;
+          background-color: #22b5e2;
           position: absolute;
-          height: 3px;
+          height: 4px;
           width: 0%;
-          top: 0;
+          top: -14px;
           left: 0;
           transition: all 0.4s; }
         .navbar-default .navbar-nav li a:hover:before {
@@ -76,7 +76,7 @@ a:hover {
 nav ul li {
   position: relative; }
   nav ul li ul {
-    background-color: #666;
+    background-color: #fdd545;
     position: absolute;
     visibility: hidden;
     z-index: 100; }
@@ -85,6 +85,8 @@ nav ul li {
       width: 150px;
       border-bottom: solid 1px #b9b9bc;
       text-align: center; }
+      nav ul li ul li a:before {
+        display: none; }
       nav ul li ul li ul {
         margin-left: 140px;
         top: 0; }
@@ -104,7 +106,16 @@ nav ul li {
     padding: 5px 0px 5px 0px; }
     .navbar-default .navbar-nav li a {
       padding-right: 12px;
-      font-size: 9px; } }
+      font-size: 9px; }
+      .navbar-default .navbar-nav li a:before {
+        content: "";
+        background-color: #22b5e2;
+        position: absolute;
+        height: 4px;
+        width: 0%;
+        top: -5px;
+        left: 0;
+        transition: all 0.4s; } }
 @media (max-width: 414px) {
   .navbar-default {
     padding: 0px; }
@@ -256,7 +267,7 @@ nav ul li {
 .tab {
   height: 170px; }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   #web {
     margin: 30px 30px; }
 
@@ -273,6 +284,11 @@ nav ul li {
 
   .tab {
     height: 100px; } }
+@media (max-width: 414px) {
+  #web .intro .intro-3 .lef {
+    padding-left: 0px; }
+  #web .intro .intro-3 .to {
+    padding-left: 0px; } }
 footer {
   background-color: #004761;
   height: auto;
@@ -324,13 +340,6 @@ footer {
       height: 4px;
       left: 15px;
       bottom: -26px; }
-  @media (max-width: 768px) {
-    footer .contact .vitri:before {
-      display: none; }
-    footer .contact .phone:before {
-      display: none; }
-    footer .contact .time:before {
-      display: none; } }
   footer .contact-1 {
     background-color: #00aadd;
     height: auto;
@@ -367,11 +376,36 @@ footer {
       border-right: none; }
     .contact-2 h5 a {
       color: #fff;
-      font-size: 15px; }
+      font-size: 15px;
+      padding-left: 18px; }
   .contact-2 h4 {
     color: #fff;
     font-size: 15px; }
 
+@media (max-width: 768px) {
+  footer .contact {
+    padding-top: 20px;
+    padding-left: 0px; }
+    footer .contact .vitri:before {
+      display: none; }
+    footer .contact .phone:before {
+      display: none; }
+    footer .contact .time:before {
+      display: none; }
+  footer .contact-1 {
+    margin-top: 20px; }
+    footer .contact-1 h5 {
+      font-size: 9px; }
+    footer .contact-1 .email {
+      padding-top: 4px; }
+      footer .contact-1 .email input[type='text'] {
+        width: 280px;
+        height: 30px;
+        color: blue; }
+      footer .contact-1 .email a {
+        font-size: 10px; }
+  footer .contact-2 h5 {
+    border-right: 0px; } }
 #to-top {
   display: none;
   position: fixed;
