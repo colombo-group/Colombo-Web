@@ -49,8 +49,7 @@ a:hover {
       .navbar-default .navbar-nav li a {
         font-size: 12px;
         font-weight: bold;
-        color: #4e4e4e;
-        padding-right: 13px; }
+        color: #4e4e4e; }
         .navbar-default .navbar-nav li a:hover {
           color: #22b5e2;
           transition: all 0.4s; }
@@ -70,8 +69,9 @@ a:hover {
         .navbar-default .navbar-nav li a span {
           font-size: 16px; }
       .navbar-default .navbar-nav li ul li a {
-        color: #fff;
-        padding: 20px; }
+        color: #747475; }
+        .navbar-default .navbar-nav li ul li a:hover {
+          color: #fff; }
 
 nav ul li {
   position: relative; }
@@ -167,26 +167,45 @@ nav ul li {
       padding: 20px 0px; }
     #web .intro .intro-2 p {
       line-height: 30px; }
-  #web .intro .intro-3 .img-responsive {
-    padding-top: 8px; }
-  #web .intro .intro-3 .short:before {
+  #web .intro .intro-3 .tr:before {
     content: "";
+    background: #f4f4f4;
     position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 390px;
-    top: -6px;
-    border: solid 2px #f4f4f4;
-    border-radius: 100%;
-    font-weight: 300px; }
-  #web .intro .intro-3 .col-md-12 {
-    padding-left: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px; }
-  #web .intro .intro-3 .col-md-6 {
-    padding-left: 0px; }
-  #web .intro .intro-3 .col-md-9 {
-    padding-left: 0px; }
+    width: 385px;
+    height: 2px;
+    left: 0px;
+    top: 85px; }
+  #web .intro .intro-3 .tr:after {
+    content: "";
+    background: #f4f4f4;
+    position: absolute;
+    width: 360px;
+    height: 2px;
+    right: 0px;
+    top: 85px; }
+  #web .intro .intro-3 .short {
+    padding-top: 40px; }
+    #web .intro .intro-3 .short:before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      left: 400px;
+      top: 11px;
+      border: solid 3px #f4f4f4;
+      border-radius: 100%; }
+    #web .intro .intro-3 .short:after {
+      content: "";
+      background: #f4f4f4;
+      position: absolute;
+      width: 2px;
+      height: 55px;
+      top: -70px;
+      right: 385px; }
+  #web .intro .intro-3 .media:first-child {
+    margin-top: 15px; }
+  #web .intro .intro-3 .bott .media-body {
+    padding-right: 20px; }
   #web .intro .intro-3 .bott h4 {
     font-size: 15px;
     font-weight: bold;
@@ -197,22 +216,8 @@ nav ul li {
     font-family: "Times New Roman", Times, serif;
     color: #bbbbbb;
     font-style: italic; }
-  #web .intro .intro-3 .bott:before {
-    content: "";
-    background: #f4f4f4;
-    position: absolute;
-    width: 380px;
-    height: 2px;
-    left: 0px;
-    top: 80px; }
-  #web .intro .intro-3 .rig:before {
-    content: "";
-    background: #f4f4f4;
-    position: absolute;
-    width: 2px;
-    height: 90px;
-    right: -11px;
-    bottom: -20px; }
+  #web .intro .intro-3 .rig .media-body {
+    padding-right: 20px; }
   #web .intro .intro-3 .rig h4 {
     font-size: 15px;
     font-weight: bold;
@@ -225,14 +230,8 @@ nav ul li {
     font-style: italic; }
   #web .intro .intro-3 .lef {
     padding-left: 40px; }
-    #web .intro .intro-3 .lef:before {
-      content: "";
-      background: #f4f4f4;
-      position: absolute;
-      width: 2px;
-      height: 85px;
-      left: 10px;
-      top: -25px; }
+    #web .intro .intro-3 .lef .media-body {
+      padding-left: 20px; }
     #web .intro .intro-3 .lef h4 {
       font-size: 15px;
       font-weight: bold; }
@@ -243,15 +242,16 @@ nav ul li {
       font-style: italic; }
   #web .intro .intro-3 .to {
     padding-left: 40px; }
+    #web .intro .intro-3 .to .media-body {
+      padding-left: 30px; }
     #web .intro .intro-3 .to:before {
       content: "";
       background: #f4f4f4;
       position: absolute;
-      width: 360px;
-      height: 2px;
-      right: 0px;
-      top: -27px;
-      right: 0px; }
+      width: 2px;
+      height: 60px;
+      left: 10px;
+      top: 0px; }
     #web .intro .intro-3 .to h4 {
       font-size: 15px;
       font-weight: bold; }
@@ -271,24 +271,19 @@ nav ul li {
   #web {
     margin: 30px 30px; }
 
+  .intro-3 .tr:before {
+    display: none; }
+  .intro-3 .tr:after {
+    display: none; }
   .intro-3 .short:before {
     display: none; }
-  .intro-3 .bott:before {
-    display: none; }
-  .intro-3 .lef:before {
-    display: none; }
-  .intro-3 .rig:before {
+  .intro-3 .short:after {
     display: none; }
   .intro-3 .to:before {
     display: none; }
 
   .tab {
     height: 100px; } }
-@media (max-width: 414px) {
-  #web .intro .intro-3 .lef {
-    padding-left: 0px; }
-  #web .intro .intro-3 .to {
-    padding-left: 0px; } }
 footer {
   background-color: #004761;
   height: auto;
@@ -309,60 +304,68 @@ footer {
         position: absolute;
         width: 35px;
         height: 2px;
-        left: 54px;
-        top: 55px; }
-    footer .contact p {
-      padding-left: 35px; }
+        left: 75px;
+        top: 35px; }
     footer .contact i {
       padding-right: 10px;
-      font-size: 25px; }
-    footer .contact .vitri:before {
-      content: "";
-      background: #fccb17;
-      position: absolute;
-      width: 280px;
-      height: 4px;
-      left: 25px;
-      bottom: -50px; }
-    footer .contact .phone:before {
-      content: "";
-      background: #ff52bb;
-      position: absolute;
-      width: 280px;
-      height: 4px;
-      left: 15px;
-      bottom: -26px; }
-    footer .contact .time:before {
-      content: "";
-      background: #a5d900;
-      position: absolute;
-      width: 280px;
-      height: 4px;
-      left: 15px;
-      bottom: -26px; }
+      font-size: 40px; }
+    footer .contact .vitri {
+      margin-top: 15px;
+      position: relative;
+      overflow: inherit; }
+      footer .contact .vitri:after {
+        content: "";
+        background: #fccb17;
+        position: absolute;
+        width: 300px;
+        height: 4px;
+        left: 25px;
+        top: 165px; }
+    footer .contact .phone {
+      position: relative;
+      overflow: inherit; }
+      footer .contact .phone:after {
+        content: "";
+        background: #ff52bb;
+        position: absolute;
+        width: 280px;
+        height: 4px;
+        left: 25px;
+        top: 165px; }
+    footer .contact .time {
+      position: relative;
+      overflow: inherit; }
+      footer .contact .time:after {
+        content: "";
+        background: #a5d900;
+        position: absolute;
+        width: 280px;
+        height: 4px;
+        left: 25px;
+        top: 165px; }
   footer .contact-1 {
     background-color: #00aadd;
     height: auto;
     color: #fff;
     font-size: 15px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 23px;
     margin-top: 100px;
     margin-bottom: 50px; }
     footer .contact-1 h5 {
       font-weight: bold; }
       footer .contact-1 h5 i {
-        font-size: 25px;
+        font-size: 35px;
         padding-right: 10px; }
     footer .contact-1 a {
       color: #fff;
       font-weight: bold;
       background-color: #ffaa00;
-      padding: 10px; }
+      padding: 9px; }
       footer .contact-1 a:hover {
         background-color: #a5d900; }
     footer .contact-1 .email {
-      padding-top: 4px; }
+      padding-top: 10px; }
       footer .contact-1 .email input[type='text'] {
         width: 340px;
         height: 40px;
@@ -370,14 +373,15 @@ footer {
 
 .contact-2 {
   padding-bottom: 30px; }
-  .contact-2 h5 {
-    border-right: dotted 1px #5eb1fa; }
-    .contact-2 h5:last-child {
+  .contact-2 a {
+    border-right: dotted 1px #5eb1fa;
+    color: #fff;
+    font-size: 15px;
+    text-align: center; }
+    .contact-2 a:hover {
+      color: #22b5e2; }
+    .contact-2 a:last-child {
       border-right: none; }
-    .contact-2 h5 a {
-      color: #fff;
-      font-size: 15px;
-      padding-left: 18px; }
   .contact-2 h4 {
     color: #fff;
     font-size: 15px; }
@@ -386,16 +390,14 @@ footer {
   footer .contact {
     padding-top: 20px;
     padding-left: 0px; }
-    footer .contact .vitri:before {
+    footer .contact .vitri:after {
       display: none; }
-    footer .contact .phone:before {
+    footer .contact .phone:after {
       display: none; }
-    footer .contact .time:before {
+    footer .contact .time:after {
       display: none; }
   footer .contact-1 {
     margin-top: 20px; }
-    footer .contact-1 h5 {
-      font-size: 9px; }
     footer .contact-1 .email {
       padding-top: 4px; }
       footer .contact-1 .email input[type='text'] {
@@ -403,8 +405,12 @@ footer {
         height: 30px;
         color: blue; }
       footer .contact-1 .email a {
-        font-size: 10px; }
-  footer .contact-2 h5 {
+        padding: 4px; }
+  footer .contact-2 h4 {
+    padding-top: 15px;
+    text-align: center; }
+  footer .contact-2 a {
+    text-align: center;
     border-right: 0px; } }
 #to-top {
   display: none;
