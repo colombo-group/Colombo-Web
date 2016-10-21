@@ -309,6 +309,9 @@ footer {
     footer .contact i {
       padding-right: 10px;
       font-size: 40px; }
+      footer .contact i:hover {
+        padding-top: 15px;
+        transition: all 0.4s; }
     footer .contact .vitri {
       margin-top: 15px;
       position: relative;
