@@ -68,10 +68,12 @@ a:hover {
           color: #dadada; }
         .navbar-default .navbar-nav li a span {
           font-size: 16px; }
-      .navbar-default .navbar-nav li ul li a {
+      .navbar-default .navbar-nav li ul a {
         color: #747475; }
-        .navbar-default .navbar-nav li ul li a:hover {
+        .navbar-default .navbar-nav li ul a:hover {
           color: #fff; }
+        .navbar-default .navbar-nav li ul a:before {
+          display: none; }
 
 nav ul li {
   position: relative; }
@@ -82,14 +84,9 @@ nav ul li {
     z-index: 100; }
     nav ul li ul li {
       padding: 10px 10px 10px 10px;
-      width: 150px;
+      width: 130px;
       border-bottom: solid 1px #b9b9bc;
       text-align: center; }
-      nav ul li ul li a:before {
-        display: none; }
-      nav ul li ul li ul {
-        margin-left: 140px;
-        top: 0; }
   nav ul li:hover ul {
     visibility: visible;
     transition: all 0.4s; }
@@ -285,8 +282,7 @@ nav ul li {
   .tab {
     height: 100px; } }
 footer {
-  background-color: #004761;
-  height: auto;
+  background-image: url(../images/ft.jpg);
   font-family: Tahoma, Geneva, sans-serif; }
   footer .contact {
     color: #fff;
@@ -308,7 +304,8 @@ footer {
         top: 35px; }
     footer .contact i {
       padding-right: 10px;
-      font-size: 40px; }
+      font-size: 40px;
+      min-width: 50px; }
       footer .contact i:hover {
         padding-top: 15px;
         transition: all 0.4s; }
@@ -351,41 +348,40 @@ footer {
     height: auto;
     color: #fff;
     font-size: 15px;
-    padding-top: 20px;
-    padding-bottom: 23px;
+    padding-top: 35px;
+    padding-bottom: 30px;
     margin-top: 100px;
     margin-bottom: 50px; }
-    footer .contact-1 h5 {
+    footer .contact-1 p {
       font-weight: bold; }
-      footer .contact-1 h5 i {
+      footer .contact-1 p i {
         font-size: 35px;
-        padding-right: 10px; }
-    footer .contact-1 a {
+        padding-right: 10px;
+        vertical-align: -5px; }
+    footer .contact-1 .email .input-group input {
+      height: 40px;
+      border-radius: 0px; }
+    footer .contact-1 .email .input-group-btn .btn-default {
+      border-radius: 0px;
+      height: 40px;
       color: #fff;
       font-weight: bold;
-      background-color: #ffaa00;
-      padding: 9px; }
-      footer .contact-1 a:hover {
+      background-color: #ffaa00; }
+      footer .contact-1 .email .input-group-btn .btn-default:hover {
         background-color: #a5d900; }
-    footer .contact-1 .email {
-      padding-top: 10px; }
-      footer .contact-1 .email input[type='text'] {
-        width: 340px;
-        height: 40px;
-        color: blue; }
 
 .contact-2 {
   padding-bottom: 30px; }
   .contact-2 a {
     border-right: dotted 1px #5eb1fa;
     color: #fff;
-    font-size: 15px;
+    font-size: 90%;
     text-align: center; }
     .contact-2 a:hover {
       color: #22b5e2; }
     .contact-2 a:last-child {
       border-right: none; }
-  .contact-2 h4 {
+  .contact-2 span {
     color: #fff;
     font-size: 15px; }
 
@@ -401,15 +397,7 @@ footer {
       display: none; }
   footer .contact-1 {
     margin-top: 20px; }
-    footer .contact-1 .email {
-      padding-top: 4px; }
-      footer .contact-1 .email input[type='text'] {
-        width: 280px;
-        height: 30px;
-        color: blue; }
-      footer .contact-1 .email a {
-        padding: 4px; }
-  footer .contact-2 h4 {
+  footer .contact-2 span {
     padding-top: 15px;
     text-align: center; }
   footer .contact-2 a {
