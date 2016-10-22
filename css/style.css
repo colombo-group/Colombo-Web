@@ -107,8 +107,7 @@ nav ul li {
   .navbar-default {
     padding: 5px 0px 5px 0px; }
     .navbar-default .navbar-nav li a {
-      padding-right: 12px;
-      font-size: 9px; }
+      padding-right: 12px; }
       .navbar-default .navbar-nav li a:before {
         content: "";
         background-color: #22b5e2;
@@ -381,7 +380,7 @@ footer {
 
 .contact-2 {
   background-color: #004761;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   padding-top: 50px; }
   .contact-2 a {
     border-right: dotted 1px #5eb1fa;
@@ -396,6 +395,11 @@ footer {
     color: #fff;
     font-size: 15px; }
 
+@media (max-width: 990px) {
+  footer .contact-2 a {
+    margin-bottom: 20px; }
+  footer .contact-2 span {
+    padding-left: 50px; } }
 @media (max-width: 768px) {
   footer .contact {
     padding-top: 20px;
@@ -411,7 +415,9 @@ footer {
     text-align: center; }
     footer .contact-2 a {
       border-right: 0px;
-      padding-bottom: 5px; } }
+      margin-bottom: 20px; }
+    footer .contact-2 span {
+      padding-left: 0px; } }
 #to-top {
   display: none;
   position: fixed;
